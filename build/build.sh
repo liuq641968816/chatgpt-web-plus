@@ -16,8 +16,8 @@ cd ../build
 # remove docker image if exists
 docker rmi -f registry.cn-hangzhou.aliyuncs.com/brongrass/chatgpt-plus-api:$version-$arch
 # build docker image for chatgpt-plus-go
-#docker build -t registry.cn-hangzhou.aliyuncs.com/brongrass/chatgpt-plus-api:$version-$arch -f dockerfile-api-go ../
-docker build --platform linux/amd64 -t registry.cn-hangzhou.aliyuncs.com/brongrass/chatgpt-plus-api:$version-$arch -f dockerfile-api-go ../
+docker build -t registry.cn-hangzhou.aliyuncs.com/brongrass/chatgpt-plus-api:$version-$arch -f dockerfile-api-go ../
+#docker build --platform linux/amd64 -t registry.cn-hangzhou.aliyuncs.com/brongrass/chatgpt-plus-api:$version-$arch -f dockerfile-api-go ../
 
 # build docker image for chatgpt-plus-vue
 docker rmi -f registry.cn-hangzhou.aliyuncs.com/brongrass/chatgpt-plus-web:$version-$arch
