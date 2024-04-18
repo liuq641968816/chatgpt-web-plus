@@ -1,0 +1,4 @@
+data/mysql/data
+logs
+static/*
+redis/redis
